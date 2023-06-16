@@ -18,7 +18,8 @@ public class Customer {
     private int phoneNo1;
     @Column(name = "phoneNo2",length = 12)
     private int phoneNo2;
-    @Column(name = "address" , length = 300) private String address;
+    @Column(name = "address" , length = 300)
+    private String address;
     @Column(name = "pinNo" , length = 20)
     private int pinNo;
     @Column(name = "organizationName", length = 100)
