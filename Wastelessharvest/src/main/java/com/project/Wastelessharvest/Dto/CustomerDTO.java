@@ -6,8 +6,8 @@ public class CustomerDTO {
     private int customerId;
     private String customerName;
     private String email;
-    private int phoneNo1;
-    private int phoneNo2;
+    private double phoneNo1;
+    private double phoneNo2;
     private String address;
     private int pinNo;
     private String organizationName;
@@ -16,7 +16,7 @@ public class CustomerDTO {
     public CustomerDTO() {
     }
 
-    public CustomerDTO(int customerId, String customerName, String email, int phoneNo1, int phoneNo2,String address, int pinNo, String organizationName, String password) {
+    public CustomerDTO(int customerId, String customerName, String email, double phoneNo1, double phoneNo2,String address, int pinNo, String organizationName, String password) {
         this.customerId = customerId;
         this.customerName = customerName;
         this.email = email;
@@ -52,19 +52,19 @@ public class CustomerDTO {
         this.email = email;
     }
 
-    public int getPhoneNo1() {
+    public double getPhoneNo1() {
         return phoneNo1;
     }
 
-    public void setPhoneNo1(int phoneNo1) {
+    public void setPhoneNo1(double phoneNo1) {
         this.phoneNo1 = phoneNo1;
     }
 
-    public int getPhoneNo2() {
+    public double getPhoneNo2() {
         return phoneNo2;
     }
 
-    public void setPhoneNo2(int phoneNo2) {
+    public void setPhoneNo2(double phoneNo2) {
         this.phoneNo2 = phoneNo2;
     }
     public String getAddress(){

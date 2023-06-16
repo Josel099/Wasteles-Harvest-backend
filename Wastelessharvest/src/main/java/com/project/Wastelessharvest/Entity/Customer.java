@@ -15,9 +15,9 @@ public class Customer {
     @Column(name = "email",length=200)
     private String email;
     @Column(name = "phoneNo1",length = 12)
-    private int phoneNo1;
+    private double phoneNo1;
     @Column(name = "phoneNo2",length = 12)
-    private int phoneNo2;
+    private double phoneNo2;
     @Column(name = "address" , length = 300)
     private String address;
     @Column(name = "pinNo" , length = 20)
@@ -30,7 +30,7 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(int customerId, String customerName, String email, int phoneNo1, int phoneNo2, String address, int pinNo, String organizationName, String password) {
+    public Customer(int customerId, String customerName, String email, double phoneNo1, double phoneNo2, String address, int pinNo, String organizationName, String password) {
         this.customerId = customerId;
         this.customerName = customerName;
         this.email = email;
@@ -66,19 +66,19 @@ public class Customer {
         this.email = email;
     }
 
-    public int getPhoneNo1() {
+    public double getPhoneNo1() {
         return phoneNo1;
     }
 
-    public void setPhoneNo1(int phoneNo1) {
+    public void setPhoneNo1(double phoneNo1) {
         this.phoneNo1 = phoneNo1;
     }
 
-    public int getPhoneNo2() {
+    public double getPhoneNo2() {
         return phoneNo2;
     }
 
-    public void setPhoneNo2(int phoneNo2) {
+    public void setPhoneNo2(double phoneNo2) {
         this.phoneNo2 = phoneNo2;
     }
 
