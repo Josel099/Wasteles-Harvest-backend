@@ -1,0 +1,12 @@
+package com.project.Wastelessharvest.Repositery;
+
+import com.project.Wastelessharvest.Entity.FoodItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.stereotype.Repository;
+
+@Repository
+@EnableJpaRepositories
+public interface FoodItemRepo extends JpaRepository<FoodItem,Integer> {
+}
+
