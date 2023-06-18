@@ -2,8 +2,7 @@ package com.project.Wastelessharvest.Entity;
 
 import jakarta.persistence.*;
 
-import java.util.Date;
-
+import java.time.LocalDate;
 @Entity
 @Table(name = "foodItem")
 public class FoodItem {
@@ -26,12 +25,12 @@ public class FoodItem {
     private double contactNo;
 
     @Column(name = "expiryDate")
-    private Date expiryDate;
+    private LocalDate expiryDate;
 
     public FoodItem() {
     }
 
-    public FoodItem(int foodId, String foodName, String foodType, String foodQuantity, String pickupLocation, double contactNo, Date expiryDate) {
+    public FoodItem(int foodId, String foodName, String foodType, String foodQuantity, String pickupLocation, double contactNo, LocalDate expiryDate) {
         this.foodId = foodId;
         this.foodName = foodName;
         this.foodType = foodType;
@@ -89,11 +88,11 @@ public class FoodItem {
         this.contactNo = contactNo;
     }
 
-    public Date getExpiryDate() {
+    public LocalDate getExpiryDate() {
         return expiryDate;
     }
 
-    public void setExpiryDate(Date expiryDate) {
+    public void setExpiryDate(LocalDate expiryDate) {
         this.expiryDate = expiryDate;
     }
 

@@ -1,6 +1,6 @@
 package com.project.Wastelessharvest.Dto;
+import java.time.LocalDate;
 
-import java.util.Date;
 
 public class FoodItemDTO {
 
@@ -10,12 +10,12 @@ public class FoodItemDTO {
     private String foodQuantity;
     private String pickupLocation;
     private double contactNo;
-    private Date expiryDate;
+    private LocalDate expiryDate;
 
     public FoodItemDTO() {
     }
 
-    public FoodItemDTO(int foodId, String foodName, String foodType, String foodQuantity, String pickupLocation, double contactNo, Date expiryDate) {
+    public FoodItemDTO(int foodId, String foodName, String foodType, String foodQuantity, String pickupLocation, double contactNo, LocalDate expiryDate) {
         this.foodId = foodId;
         this.foodName = foodName;
         this.foodType = foodType;
@@ -73,11 +73,11 @@ public class FoodItemDTO {
         this.contactNo = contactNo;
     }
 
-    public Date getExpiryDate() {
+    public LocalDate getExpiryDate() {
         return expiryDate;
     }
 
-    public void setExpiryDate(Date expiryDate) {
+    public void setExpiryDate(LocalDate expiryDate) {
         this.expiryDate = expiryDate;
     }
 
