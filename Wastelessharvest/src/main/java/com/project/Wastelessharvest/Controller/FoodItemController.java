@@ -24,5 +24,9 @@ public class FoodItemController {
     public List<FoodItem> getFoodItem(){
         return  foodItemService.getAllFoodItem();
     };
+    @GetMapping(path="/getMyList/{customerId}")
+    public List<FoodItem> getFoodItemsByCustomerId(@PathVariable int customerId){
+        return  foodItemService.getFoodItembyCustomerId(customerId);
+    }
 
 }

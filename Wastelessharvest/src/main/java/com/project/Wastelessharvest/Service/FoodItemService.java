@@ -9,4 +9,6 @@ public interface FoodItemService {
 
     String addFood(FoodItemDTO foodItemDTO);
     List<FoodItem> getAllFoodItem();
+
+    List<FoodItem> getFoodItembyCustomerId(int customerId);
 }

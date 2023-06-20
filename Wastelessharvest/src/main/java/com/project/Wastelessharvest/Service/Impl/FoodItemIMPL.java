@@ -36,5 +36,10 @@ public class FoodItemIMPL implements FoodItemService {
         return foodItemRepo.findAll(Sort.by(Sort.Direction.DESC,"foodId"));
 
     }
+
+    @Override
+    public List<FoodItem> getFoodItembyCustomerId(int customerId) {
+        return foodItemRepo.findByCustomerCustomerId(customerId);
+    }
 }
 
