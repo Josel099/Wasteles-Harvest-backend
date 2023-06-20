@@ -19,6 +19,7 @@ public class FoodItemIMPL implements FoodItemService {
 
         FoodItem foodItem = new FoodItem(
                 foodItemDTO.getFoodId(),
+                foodItemDTO.getCustomer(),
                 foodItemDTO.getFoodName(),
                 foodItemDTO.getFoodType(),
                 foodItemDTO.getFoodQuantity(),

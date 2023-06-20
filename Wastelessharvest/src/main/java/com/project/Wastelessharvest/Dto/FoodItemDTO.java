@@ -1,10 +1,13 @@
 package com.project.Wastelessharvest.Dto;
+import com.project.Wastelessharvest.Entity.Customer;
+
 import java.time.LocalDate;
 
 
 public class FoodItemDTO {
 
     private int foodId;
+    private Customer customer;
     private String foodName;
     private String foodType;
     private String foodQuantity;
@@ -15,8 +18,9 @@ public class FoodItemDTO {
     public FoodItemDTO() {
     }
 
-    public FoodItemDTO(int foodId, String foodName, String foodType, String foodQuantity, String pickupLocation, double contactNo, LocalDate expiryDate) {
+    public FoodItemDTO(int foodId, Customer customer ,String foodName, String foodType, String foodQuantity, String pickupLocation, double contactNo, LocalDate expiryDate) {
         this.foodId = foodId;
+        this.customer=customer;
         this.foodName = foodName;
         this.foodType = foodType;
         this.foodQuantity = foodQuantity;
@@ -33,6 +37,12 @@ public class FoodItemDTO {
         this.foodId = foodId;
     }
 
+    public Customer getCustomer() {
+        return customer;
+    }
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
     public String getFoodName() {
         return foodName;
     }

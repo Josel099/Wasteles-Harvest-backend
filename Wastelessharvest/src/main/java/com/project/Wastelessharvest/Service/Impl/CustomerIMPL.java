@@ -49,16 +49,17 @@ public class CustomerIMPL implements CustomerService {
             if (isPwdRight) {
                 Optional<Customer> customer = customerRepo.findOneByEmailAndPassword(loginDTO.getEmail(), encodedPassword);
                 if (customer.isPresent()) {
-                    return new LoginResponse("Login Success", true);
+                    int customer_id = customer1.getCustomerId();
+                    return new LoginResponse("Login Success", true ,customer_id);
                 } else {
-                    return new LoginResponse("Login Failed", false);
+                    return new LoginResponse("Login Failed", false,0);
                 }
             } else {
 
-                return new LoginResponse("password Not Match", false);
+                return new LoginResponse("password Not Match", false,0);
             }
         }else {
-            return new LoginResponse("Email not exists", false);
+            return new LoginResponse("Email not exists", false,0);
         }
 
 

@@ -11,6 +11,9 @@ public class FoodItem {
     @Column(name = "foodId" , length = 25)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int foodId;
+    @ManyToOne
+    @JoinColumn(name = "customerId")
+    private Customer customer;
     @Column(name = "foodName", nullable = false )
     private String foodName;
     @Column(name = "foodType")
@@ -30,8 +33,9 @@ public class FoodItem {
     public FoodItem() {
     }
 
-    public FoodItem(int foodId, String foodName, String foodType, String foodQuantity, String pickupLocation, double contactNo, LocalDate expiryDate) {
+    public FoodItem(int foodId,Customer customer, String foodName, String foodType, String foodQuantity, String pickupLocation, double contactNo, LocalDate expiryDate) {
         this.foodId = foodId;
+        this.customer = customer;
         this.foodName = foodName;
         this.foodType = foodType;
         this.foodQuantity = foodQuantity;
@@ -48,6 +52,13 @@ public class FoodItem {
         this.foodId = foodId;
     }
 
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
     public String getFoodName() {
         return foodName;
     }
@@ -100,6 +111,7 @@ public class FoodItem {
     public String toString() {
         return "FoodItem{" +
                 "foodId=" + foodId +
+                ", customer=" + customer +
                 ", foodName='" + foodName + '\'' +
                 ", foodType='" + foodType + '\'' +
                 ", foodQuantity='" + foodQuantity + '\'' +

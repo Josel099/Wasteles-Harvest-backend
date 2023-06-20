@@ -6,10 +6,12 @@ public class LoginResponse {
 
     String message;
     boolean status;
+    int cutomerid;
 
-    public LoginResponse(String message, boolean status) {
+    public LoginResponse(String message, boolean status ,int cutomerid ) {
         this.message = message;
         this.status = status;
+        this.cutomerid=cutomerid;
     }
 
     public LoginResponse() {
@@ -32,12 +34,22 @@ public class LoginResponse {
         this.status = status;
     }
 
+    public int getCustomerId(){
+        return cutomerid;
+    }
+
+    public void setCutomerid(int cutomerid) {
+        this.cutomerid = cutomerid;
+    }
+
     @Override
     public String toString() {
         return "LoginResponse{" +
                 "message='" + message + '\'' +
                 ", status=" + status +
+                ", cutomerid=" + cutomerid +
                 '}';
     }
+
 }
 
