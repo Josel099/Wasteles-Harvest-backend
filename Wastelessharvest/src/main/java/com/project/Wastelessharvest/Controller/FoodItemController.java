@@ -28,5 +28,10 @@ public class FoodItemController {
     public List<FoodItem> getFoodItemsByCustomerId(@PathVariable int customerId){
         return  foodItemService.getFoodItembyCustomerId(customerId);
     }
+    @DeleteMapping("/deleteFoodItem/{foodId}")
+    public void deleteFoodItem(@PathVariable int foodId){
+        foodItemService.deleteFoodItem(foodId);
+    }
+
 
 }

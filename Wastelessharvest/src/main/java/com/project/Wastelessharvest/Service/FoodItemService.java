@@ -11,4 +11,6 @@ public interface FoodItemService {
     List<FoodItem> getAllFoodItem();
 
     List<FoodItem> getFoodItembyCustomerId(int customerId);
+
+     public  void deleteFoodItem(int foodId) ;
 }

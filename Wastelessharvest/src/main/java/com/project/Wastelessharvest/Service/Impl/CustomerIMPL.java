@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -35,6 +36,12 @@ public class CustomerIMPL implements CustomerService {
         );
         customerRepo.save(customer);
         return customer.getCustomerName();
+    }
+
+
+    @Override
+    public Customer getCustomerById(int customerId) {
+        return customerRepo.findByCustomerId(customerId);
     }
 
     @Override
@@ -65,4 +72,6 @@ public class CustomerIMPL implements CustomerService {
 
 
     }
+
+
 }

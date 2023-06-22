@@ -41,5 +41,10 @@ public class FoodItemIMPL implements FoodItemService {
     public List<FoodItem> getFoodItembyCustomerId(int customerId) {
         return foodItemRepo.findByCustomerCustomerId(customerId);
     }
+
+    @Override
+    public void deleteFoodItem(int foodId) {
+        foodItemRepo.deleteById(foodId);
+    }
 }
 

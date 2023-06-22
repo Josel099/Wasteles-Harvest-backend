@@ -1,6 +1,7 @@
 package com.project.Wastelessharvest.Controller;
 import com.project.Wastelessharvest.Dto.CustomerDTO;
 import com.project.Wastelessharvest.Dto.LoginDTO;
+import com.project.Wastelessharvest.Entity.Customer;
 import com.project.Wastelessharvest.Response.LoginResponse;
 import com.project.Wastelessharvest.Service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,8 @@ public class CustomerController {
         LoginResponse loginResponse =customerService.loginCustomer(loginDTO);
         return ResponseEntity.ok(loginResponse);
     }
-
-
+    @GetMapping(path = "/getCustomer/{customerId}")
+    public Customer getCustomerByCustomerId(@PathVariable int customerId) {
+        return customerService.getCustomerById(customerId);
+    }
 }
