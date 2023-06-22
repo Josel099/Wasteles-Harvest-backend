@@ -29,4 +29,8 @@ public class CustomerController {
     public Customer getCustomerByCustomerId(@PathVariable int customerId) {
         return customerService.getCustomerById(customerId);
     }
+    @PutMapping(path = "/updateCustomer/{customerId}")
+    public void updateCustomer(@PathVariable int customerId,@RequestBody CustomerDTO customerDTO ){
+        customerService.updateCustomer(customerId,customerDTO);
+    }
 }
