@@ -28,7 +28,6 @@ public class CustomerIMPL implements CustomerService {
                 customerDTO.getPhoneNo1(),
                 customerDTO.getPhoneNo2(),
                 customerDTO.getAddress(),
-                customerDTO.getPinNo(),
                 customerDTO.getOrganizationName(),
                 this.passwordEncoder.encode(customerDTO.getPassword())
         );
@@ -52,7 +51,6 @@ public class CustomerIMPL implements CustomerService {
                 customerUpdated.setPhoneNo1(customerDTO.getPhoneNo1());
                 customerUpdated.setPhoneNo2(customerDTO.getPhoneNo2());
                 customerUpdated.setAddress(customerDTO.getAddress());
-                customerUpdated.setPinNo(customerDTO.getPinNo());
                 customerUpdated.setOrganizationName(customerDTO.getOrganizationName());
                 String password = customerDTO.getPassword();
         if (password != null && !password.isEmpty()) {

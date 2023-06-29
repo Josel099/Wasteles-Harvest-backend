@@ -9,21 +9,19 @@ public class CustomerDTO {
     private double phoneNo1;
     private double phoneNo2;
     private String address;
-    private int pinNo;
     private String organizationName;
     private String password;
 
     public CustomerDTO() {
     }
 
-    public CustomerDTO(int customerId, String customerName, String email, double phoneNo1, double phoneNo2,String address, int pinNo, String organizationName, String password) {
+    public CustomerDTO(int customerId, String customerName, String email, double phoneNo1, double phoneNo2,String address, String organizationName, String password) {
         this.customerId = customerId;
         this.customerName = customerName;
         this.email = email;
         this.phoneNo1 = phoneNo1;
         this.phoneNo2 = phoneNo2;
         this.address= address;
-        this.pinNo = pinNo;
         this.organizationName = organizationName;
         this.password = password;
     }
@@ -75,14 +73,6 @@ public class CustomerDTO {
         this.address=address;
     }
 
-    public int getPinNo() {
-        return pinNo;
-    }
-
-    public void setPinNo(int pinNo) {
-        this.pinNo = pinNo;
-    }
-
     public String getOrganizationName() {
         return organizationName;
     }
@@ -108,7 +98,6 @@ public class CustomerDTO {
                 ", phoneNo1=" + phoneNo1 +
                 ", phoneNo2=" + phoneNo2 +
                 ", address='" + address + '\'' +
-                ", pinNo=" + pinNo +
                 ", organizationName='" + organizationName + '\'' +
                 ", password='" + password + '\'' +
                 '}';

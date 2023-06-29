@@ -20,8 +20,6 @@ public class Customer {
     private double phoneNo2;
     @Column(name = "address" , length = 300)
     private String address;
-    @Column(name = "pinNo" , length = 20)
-    private int pinNo;
     @Column(name = "organizationName", length = 100)
     private String organizationName;
     @Column(name = "password",length=200)
@@ -30,14 +28,13 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(int customerId, String customerName, String email, double phoneNo1, double phoneNo2, String address, int pinNo, String organizationName, String password) {
+    public Customer(int customerId, String customerName, String email, double phoneNo1, double phoneNo2, String address, String organizationName, String password) {
         this.customerId = customerId;
         this.customerName = customerName;
         this.email = email;
         this.phoneNo1 = phoneNo1;
         this.phoneNo2 = phoneNo2;
         this.address = address;
-        this.pinNo = pinNo;
         this.organizationName = organizationName;
         this.password = password;
     }
@@ -90,13 +87,6 @@ public class Customer {
         this.address = address;
     }
 
-    public int getPinNo() {
-        return pinNo;
-    }
-
-    public void setPinNo(int pinNo) {
-        this.pinNo = pinNo;
-    }
 
     public String getOrganizationName() {
         return organizationName;
@@ -123,7 +113,6 @@ public class Customer {
                 ", phoneNo1=" + phoneNo1 +
                 ", phoneNo2=" + phoneNo2 +
                 ", address='" + address + '\'' +
-                ", pinNo=" + pinNo +
                 ", organizationName='" + organizationName + '\'' +
                 ", password='" + password + '\'' +
                 '}';
