@@ -105,7 +105,7 @@ public class Customer {
     }
 
     @Override
-    public String toString() {
+    public String toString(){
         return "Customer{" +
                 "customerId=" + customerId +
                 ", customerName='" + customerName + '\'' +
