@@ -51,7 +51,7 @@ This repository contains the back-end of our application, which is built using R
 
 ## Getting Started 🚀
 
-To set up the WastelessHarvest Frontend on your local machine, follow these steps:
+To set up the WastelessHarvest Backend on your local machine, follow these steps:
 
 ### System Requirements 🖥️
 
