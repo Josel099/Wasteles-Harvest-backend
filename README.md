@@ -29,7 +29,7 @@ This project is built using the following technologies:
 - **Backend**: Spring Boot 🍃
 - **Database**: MySQL 🦈
 
-This repository contains the back-end of our application, which is built using React. To fully utilize the application, you need to set up the backend of the project. You can find instructions for setting up the backend by visiting the [backend repository](https://github.com/Josel099/Wasteles-Harvest-backend). 🚀
+This repository contains the back-end of our application, which is built using Spring Boot🍃. To fully utilize the application, you need to set up the fondend  of the project. You can find instructions for setting up the frondend by visiting the [backend repository](https://github.com/Josel099/Wasteles-Harvest-backend). 🚀
 
 ## Features 🌟
 
