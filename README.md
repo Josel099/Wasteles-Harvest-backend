@@ -87,7 +87,7 @@ The project's structure is organized as follows:
 
 ## Contributing 🤝
 
-We welcome contributions to the WastelessHarvest frontend project. By contributing, you can play a crucial role in reducing food waste and making a positive impact on our community. There are various ways to get involved and contribute:
+We welcome contributions to the WastelessHarvest backend project. By contributing, you can play a crucial role in reducing food waste and making a positive impact on our community. There are various ways to get involved and contribute:
 
 - **Bug Reports:** If you come across any issues, bugs, or unexpected behavior, please create an issue in our repository to report the problem. Be sure to provide detailed information and steps to reproduce the issue. 🐛
 
