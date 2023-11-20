@@ -3,7 +3,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/Josel099/WastelessHarvest-backend)
 ![GitHub forks](https://img.shields.io/github/forks/Josel099/WastelessHarvest-backend)
 [![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
-![GitHub Repo stars](https://img.shields.io/github/stars/Josel099/WastelessHarvest-frontend)
+![GitHub Repo stars](https://img.shields.io/github/stars/Josel099/WastelessHarvest-backend)
 
 
 
