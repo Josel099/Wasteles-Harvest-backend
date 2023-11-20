@@ -29,7 +29,7 @@ This project is built using the following technologies:
 - **Backend**: Spring Boot 🍃
 - **Database**: MySQL 🦈
 
-This repository contains the back-end of our application, which is built using spring boot . To fully utilize the application, you need to set up the frond end of the project. You can find instructions for setting up the frond end by visiting the [frond-end repository](https://github.com/Josel099/WastelessHarvest-frontend.git). 🚀
+This repository contains the back-end of our application, which is built using spring boot . To fully utilize the application, you need to set up the frond end of the project. You can find instructions for setting up the frondend by visiting the [frond-end repository](https://github.com/Josel099/WastelessHarvest-frontend.git). 🚀
 
 ## Features 🌟
 
@@ -57,14 +57,16 @@ To set up the WastelessHarvest Backend on your local machine, follow these steps
 
 Before you begin, ensure your system meets the following requirements:
 
-- **Node.js:** Ensure you have Node.js installed. The project requires a minimum Node.js version of 14.0.0. You can download Node.js from [nodejs.org](https://nodejs.org/).
-- **npm:** Verify that you have npm (Node Package Manager) installed. npm is typically included with Node.js.
+- **Java:** Ensure you have Java installed. The project requires Java 8 or later.
+- **Maven:** Verify that you have Maven installed. Maven is used for project build and dependencies. You can download Maven from [maven.apache.org](https://maven.apache.org/).
+- **MySQL:** Ensure you have a MySQL database set up. You'll need to configure the database connection in the application properties.
 
 1. Clone this repository to your local environment.
-2. Navigate to the project directory.
-3. Run `npm install` to install the required project dependencies.
-4. Launch the development server by running `npm start`.
-5. Open your web browser and access the application at `http://localhost:3000`. 🌐
+2. Configure your MySQL database connection in `src/main/resources/application.properties`.
+3. Navigate to the project directory.
+4. Run `mvn clean install` to build the project and install dependencies.
+5. Launch the backend server by running `mvn spring-boot:run`.  🌐
+
 
 ## Technologies Used 🛠️
 
