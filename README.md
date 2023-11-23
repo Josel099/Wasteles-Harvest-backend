@@ -72,20 +72,15 @@ Before you begin, ensure your system meets the following requirements:
 
 This project is built with the following key technologies:
 
-- **React:** A popular JavaScript library for building user interfaces.
-- **React Router:** For handling navigation within the application.
-- **Axios:** For making API requests to the backend.
-- **CSS Modules:** For modular and scoped CSS styles.
-- **Other dependencies:** Listed in the `package.json` file. 📦
+- **Spring Boot:** A Java-based framework for building web and enterprise applications.
+- **MySQL:** A relational database for storing application data.
 
 ## Project Structure 📂
 
 The project's structure is organized as follows:
 
-- `src/`: Contains the source code for the frontend application.
-- `public/`: Contains public assets and the `index.html` file.
-- `package.json`: Lists project dependencies and scripts.
-- `README.md`: This detailed README file. 📁
+- `src/`: Contains the source code for the backend application.
+- `pom.xml`: Maven project configuration file.
 
 ## Contributing 🤝
 
