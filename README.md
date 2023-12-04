@@ -7,7 +7,7 @@
 
 
 
-Welcome to the WastelessHarvest backend repository 🌱 !   WastelessHarvest is a powerful food waste management system aimed at addressing the global issue of food wastage. This repository contains the backend codebase for our application.
+Welcome to the WastelessHarvest backend repository 🌱 !   WastelessHarvest is a powerful food waste management system aimed at addressing the global issue of food wastage.This repository contains the backend codebase for our application.
 
 ## Table of Contents
 
